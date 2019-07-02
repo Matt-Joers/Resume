@@ -1,4 +1,4 @@
-contact = {
+let contact = {
   address: 'N391 Lincoln Road',
   state: "WI",
   zip: '53036',
