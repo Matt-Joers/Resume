@@ -7,3 +7,5 @@ let contact = {
   linkedin: 'https://www.linkedin.com/in/matt-joers-59956b15/',
   github: 'https://github.com/relicdude36',
 }
+
+$('#address').append(`${contact.address}`);
