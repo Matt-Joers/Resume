@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
-    <link rel="stylesheet" href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
-    
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>Resume - Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
-    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
-    <link rel="stylesheet" href="../css/main.css"">
-    <link rel="stylesheet" href="../css/bootstrap-social.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+   
   </head>
-  <title>Resume - Experience</title>
+  
   <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
       <a class="navbar-brand" href="../index.html">MATT'S PROFILE</a>
@@ -29,14 +29,42 @@
     </nav>
     <!-- Where Main content will go -->
     <div class="container-fluid">
-        <h3>Experience</h3>
-        <p></p>
+      <h3 class="page_title">Experience</h3>
+      <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="../assets/froedtert_logo.png" alt="Froedtert">
+            <div class="card-body">
+              <h5 class="card-title">Froedtert Health</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a href="#" class="btn btn-info" data-toggle="modal" data-target="#froedtertModal">More Info</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="../assets/Skyline.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Skyline Technologies</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-info data-toggle="modal" data-target="#skylineModal">More Info</a>
+            </div>
+          </div>
+
+        <div class="card">
+          <img class="card-img-top" src="../assets/QG.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Quad/Graphics</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#qgModal">More Info</a>
+          </div>
+        </div>
+      </div>
       </div>
 
-      <footer class="footer">
-          <div class="container">
-            <span class="text-muted"><a href='mailto:mattjoers@gmail.com'>mattjoers@gmail.com</a> | <a href='tel:+2622475786'>262.247.5786</a> | <a href="https://www.linkedin.com/in/matt-joers-59956b15/" target="_blank">LinkedIn</a></span>
-          </div>
-        </footer>
-  </body>
+      <footer class="sticky-footer" id="footer_container">
+        <div class="container">
+          <span class="text-muted"><a href='mailto:mattjoers@gmail.com' class="email" id="email">mattjoers@gmail.com</a> | <a href='tel:+2622475786' id="mobile_phone">262.247.5786</a> | <a id="linkedin" href="https://www.linkedin.com/in/matt-joers-59956b15/" target="_blank">LinkedIn</a> </span>
+        </div>
+      </footer>
+</body>
+
 </html>
