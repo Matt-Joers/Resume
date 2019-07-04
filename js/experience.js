@@ -106,7 +106,7 @@ function specificExperience(positionTitle, cardName, modalName )  {
   <img class="card-img-top" src="${image}" alt="${organization}">
     <div class="card-body">
       <h5 class="card-title">${position}</h5>
-      <h6 class="card-title">${organization}</h6>
+      <h6 class="card-subtitle mb-2">${organization}</h6>
       <h6 class="card-subtitle mb-2 text-muted">${dateSpan}</h6>
       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       <a href="#" class="btn btn-info" data-toggle="modal" data-target="#Modal-${orgID}">More Info</a>
@@ -127,7 +127,12 @@ function specificExperience(positionTitle, cardName, modalName )  {
           
                 <!-- Modal body -->
                 <div class="modal-body" id="modal-body">
+                <h4 class="card-subtitle mb-2 text-muted">${position}</h4>
+                <h6>${dateSpan}</h6>
+                <hr>
+                <ul>
                   ${listJobText}
+                </ul>
                 </div>
           
                 <!-- Modal footer -->
@@ -138,3 +143,69 @@ function specificExperience(positionTitle, cardName, modalName )  {
             </div>
             `)
 }
+
+function organizationalRoles(organizationID, cardName) {
+  const results = experiences.filter(experiences => experiences.orgID == organizationID);
+  // const results = resultsFiltered.find(resultsFiltered=> resultsFiltered.position == positionTitle);
+  let organization = results.organization;
+  let orgID = results.orgID;
+  let position = results.position;
+  let dateSpan = `${results.startDate}  -  ${results.endDate}`;
+  let location = results.location;
+  let positionText = "";
+  let image = results.image;
+  // let positionDetails = positionDetailList(results.forEach);
+  console.log(results);
+  function positionInfo() {
+    var i = 0;
+    var len = results.length;
+    for (; i < len;) {
+    positionText += `<h4 class="card-subtitle mb-2 text-muted">${results[i].position}</h4>
+                "<h6> " ${results[i].startDate} - ${results[i].endDate} "</h6>"
+                "<hr>"
+     "<li>" ${results[i].jobDescription} "</li><br>`;
+    }
+    
+  }
+  console.log(positionText);
+  $("#"+cardName).append(`
+  <img class="card-img-top" src="${results[0].image}" alt="${results[0].organization}">
+    <div class="card-body">
+      <h5 class="card-title">Multiple Roles</h5>
+      <h6 class="card-subtitle mb-2">${results[0].organization}</h6>
+      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <a href="#" class="btn btn-info" data-toggle="modal" data-target="#Modal-${results[0].orgID}">More Info</a>
+    </div>
+  </div>
+  `)
+
+  $("#"+ cardName).append(`
+  <div class="modal" id="Modal-${results[0].orgID}">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title" id="modal-title">${results[0].organization}</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body" id="modal-body">
+                
+                <hr>
+                <ul>
+                  ${positionText}
+                </ul>
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+            `)
+}
+
+
