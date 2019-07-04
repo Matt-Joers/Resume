@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../js/experience.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
    
   </head>
@@ -31,103 +32,16 @@
     <div class="container-fluid">
       <h3 class="page_title">Experience</h3>
       <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="../assets/froedtert_logo.png" alt="Froedtert">
-            <div class="card-body">
-              <h5 class="card-title">Froedtert Health</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="#" class="btn btn-info" data-toggle="modal" data-target="#froedtertModal">More Info</a>
-            </div>
-          </div>
-
-          <!-- The Skyline Modal -->
-          <div class="modal" id="froedtertModal">
-              <div class="modal-dialog">
-                <div class="modal-content">
-            
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">Froedtert Health</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-            
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    Work History
-                  </div>
-            
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
+          <div class="card" id="froedtert-card">
+              
             </div>
 
-          <div class="card">
-            <img class="card-img-top" src="../assets/Skyline.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Skyline Technologies</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-info" data-toggle="modal" data-target="#skylineModal">More Info</a>
-            </div>
-          </div>
-
-          <!-- The Skyline Modal -->
-          <div class="modal" id="skylineModal">
-              <div class="modal-dialog">
-                <div class="modal-content">
+          <div class="card" id="skyline-card">
             
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                    <h4 class="modal-title">Skyline Technologies</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-            
-                  <!-- Modal body -->
-                  <div class="modal-body">
-                    Work History
-                  </div>
-            
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
             </div>
 
-        <div class="card">
-          <img class="card-img-top" src="../assets/QG.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Quad/Graphics</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#qgModal">More Info</a>
-          </div>
-        </div>
-
-        <!-- The QG Modal -->
-        <div class="modal" id="qgModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
+        <div class="card" id="qg-card">
           
-                <!-- Modal Header -->
-                <div class="modal-header">
-                  <h4 class="modal-title">Quad/Graphics</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-          
-                <!-- Modal body -->
-                <div class="modal-body">
-                  Work History
-                </div>
-          
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
           </div>
 
       </div>
@@ -139,5 +53,8 @@
         </div>
       </footer>
 </body>
-
+<!-- <script>isArray();</script> -->
+<script>specificExperience("Software Developer", "froedtert-card");</script>
+<script>specificExperience("Portal Analyst II", "skyline-card");</script>
+<script>specificExperience("Software Product Specialist", "qg-card");</script>
 </html>

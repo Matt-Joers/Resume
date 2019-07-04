@@ -1,0 +1,94 @@
+ <img class="card-img-top" src="../assets/froedtert_logo.png" alt="Froedtert">
+            <div class="card-body">
+              <h5 class="card-title">Froedtert Health</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a href="#" class="btn btn-info" data-toggle="modal" data-target="#froedtertModal">More Info</a>
+            </div>
+          </div>
+
+          <!-- The Skyline Modal -->
+          <div class="modal" id="froedtertModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="froedtert-modal-title"></h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body" id="froedtert-modal-body">
+                    Work History
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+
+
+<img class="card-img-top" src="../assets/Skyline.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Skyline Technologies</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-info" data-toggle="modal" data-target="#skylineModal">More Info</a>
+            </div>
+          </div>
+
+          <!-- The Skyline Modal -->
+          <div class="modal" id="skylineModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Skyline Technologies</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body" id="skyline-modal-body">
+                    Work History
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+
+
+<img class="card-img-top" src="../assets/QG.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Quad/Graphics</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <a href="#" class="btn btn-info" data-toggle="modal" data-target="#qgModal">More Info</a>
+          </div>
+        </div>
+
+        <!-- The QG Modal -->
+        <div class="modal" id="qgModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+          
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title" id="qg-modal-title"></h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+          
+                <!-- Modal body -->
+                <div class="modal-body" id="qg-modal-body">
+                  Work History
+                </div>
+          
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
