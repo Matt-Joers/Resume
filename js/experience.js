@@ -37,7 +37,7 @@ let experiences = [
     position: 'Software Product Specialist',
     organization: 'Quad/Graphics',
     location: 'Sussex, WI',
-    image: '../assets/QG.png',
+    image: '../assets/QG_logo.jpg',
     startDate: 'Sept 2014',
     endDate: 'Feb 2016',
     jobDescription: 
@@ -72,7 +72,7 @@ let experiences = [
     position: 'SharePoint Coordinator / Corp. Trainee',
     organization: 'Quad/Graphics',
     location: 'Sussex, WI',
-    image: '../assets/QG.png',
+    image: '../assets/QG_logo.jpg',
     startDate: 'Feb 2010',
     endDate: 'Jan 2013',
     jobDescription: 
@@ -103,7 +103,7 @@ function specificExperience(positionTitle, cardName, modalName )  {
 
   console.log(listJobText);
   $("#"+cardName).append(`
-  <img class="card-img-top" src="${image}" alt="${organization}">
+  <img class="card-img-top" src="${image}" alt="${organization}" style="width: 68%; padding: 5px;">
     <div class="card-body">
       <h5 class="card-title">${position}</h5>
       <h6 class="card-subtitle mb-2">${organization}</h6>
@@ -120,7 +120,7 @@ function specificExperience(positionTitle, cardName, modalName )  {
               <div class="modal-content">
           
                 <!-- Modal Header -->
-                <div class="modal-header">
+                <div class="modal-header" id="modal-header">
                   <h4 class="modal-title" id="modal-title">${organization}</h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -169,7 +169,7 @@ function organizationalRoles(organizationID, cardName) {
   }
   console.log(positionText);
   $("#"+cardName).append(`
-  <img class="card-img-top" src="${results[0].image}" alt="${results[0].organization}">
+  <img class="card-img-top" src="${results[0].image}" alt="${results[0].organization}" style="width: 68%; padding: 5px;>
     <div class="card-body">
       <h5 class="card-title">Multiple Roles</h5>
       <h6 class="card-subtitle mb-2">${results[0].organization}</h6>
@@ -185,7 +185,7 @@ function organizationalRoles(organizationID, cardName) {
               <div class="modal-content">
           
                 <!-- Modal Header -->
-                <div class="modal-header">
+                <div class="modal-header" id="modal-header">
                   <h4 class="modal-title" id="modal-title">${results[0].organization}</h4>
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
