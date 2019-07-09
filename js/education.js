@@ -7,6 +7,8 @@ let education = [
   longitude: '',
   gradDate: 'Dec 2014',
   additionalDetails: '',
+  image: '',
+  URL: '',
 }
 },
   { stout: {
@@ -17,6 +19,8 @@ let education = [
     longitude: '',
     gradDate: 'Dec 2009',
     additionalDetails: 'Minor in Business Administration',
+    image: '',
+    URL: '',
   }
 }
 ]
