@@ -109,7 +109,7 @@ function specificExperience(positionTitle, cardName, modalName )  {
       <h6 class="card-subtitle mb-2">${organization}</h6>
       <h6 class="card-subtitle mb-2 text-muted">${dateSpan}</h6>
       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="#" class="btn btn-info" data-toggle="modal" data-target="#Modal-${orgID}">More Info</a>
+      <a href="#" class="btn btn-info hvr-pop" data-toggle="modal" data-target="#Modal-${orgID}">More Info</a>
     </div>
   </div>
   `)
@@ -174,7 +174,7 @@ function organizationalRoles(organizationID, cardName) {
       <h5 class="card-title">Multiple Roles</h5>
       <h6 class="card-subtitle mb-2">${results[0].organization}</h6>
       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="#" class="btn btn-info" data-toggle="modal" data-target="#Modal-${results[0].orgID}">More Info</a>
+      <a href="#" class="btn btn-info hvr-pop" data-toggle="modal" data-target="#Modal-${results[0].orgID}">More Info</a>
     </div>
   </div>
   `)
